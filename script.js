@@ -10,7 +10,6 @@
 	  .style("opacity", 0);
 	  
 	  $( ".point" ).hover(function() {
-		  console.log("guatanamo");	
 		  $(this).attr("style","fill: Navy;");});
 
 	var svg = d3.select("#punchcard")
