@@ -10,12 +10,22 @@
 	  .style("opacity", 0);
 	  
 	  $( ".point" ).hover(function() {
+		  
 		  $(this).attr("style","fill: Navy;");});
 
 	var svg = d3.select("#punchcard")
 	  .append("svg")
 	  .attr("width", w)
 	  .attr("height", h);
+	  
+	  svg.append("text")
+        .attr("x", (w / 2))             
+        .attr("y", 28)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "25px") 
+        .attr("fill", "#414241")
+        .style("text-decoration", "underline")  
+        .text("Player Movement vs Time Graph ");
 
 	//set x axis number of ticks
 	var x_axis_ticks = 22;
